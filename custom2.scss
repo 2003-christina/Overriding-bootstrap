@@ -1,0 +1,22 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@mixin custom-style {
+  font-family: "Roboto", sans-serif;
+  color: #6200ea;
+  border: 2px solid #6200ea;
+  padding: 10px;
+  border-radius: 5px;
+}
+[class^="custom-"] {
+  @include custom-style;
+}
+.custom-header {
+  @include custom-style;
+  background-color: #f0f0f0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.custom-btn {
+  @include custom-style;
+  background-color: #ff5733;
+  color: white;
+}
